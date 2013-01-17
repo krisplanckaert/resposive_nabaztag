@@ -1,0 +1,51 @@
+@import url('reset.css');
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background: url('../images/achtergrond.gif') top repeat-x;
+	color:#533A85;
+	}
+nav select{display:none;}
+img{width: 100%;}        
+h1{font-size:24px;font-weight:bold;margin-bottom:10px;}
+h2{font-size:20px;font-weight:bold;margin-bottom:10px;}
+p{margin-bottom:10px;font-size:12px;}
+	
+#container{max-width:700px; width:100%; margin:0 auto;}
+header{float:left;width:100%;}
+header #logo{float:left;width:20%;margin-top:1px;}
+header #slogan{float:left;width:77.14285714%;}
+
+nav{float:left;width:22%;/*height:800px;*/height:120px;}
+
+#teaser{float:left;width:75.714285714%;border:3px solid #D9CFEB;min-height:130px;margin-top:-50px;background:#EAE4F3;padding:5px}
+
+#content{margin-top:20px;float:left;width:75.7142857142857%;border:3px solid #D9CFEB;min-height:270px;padding:5px;}
+
+/* afbeeldingen in de content */
+#content .article{float:left;width:60%;}
+#content figure{float:left;width:14.2857142857143%;margin-left:10px;}
+
+
+footer{margin-top:20px; float:left;width:77.1428571428%;}
+
+.hidden,figcaption{display:none;}
+
+@media screen and (max-width:700px) {
+    body{
+        background: none;
+    }
+    #content figure {
+        float:none;width:80%;
+    }
+    h1, h2{
+        font-size:12px;
+    }
+    nav ul{display:none;}
+    nav select{display: inline;}
+    
+    /*#content, #teaser{
+        display: none;
+    }*/
+    
+}
+

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nabaztag - Contacteer ons</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<meta name="keywords" content="Wifi, internet, konijn" />
+<meta name="description" content="Nabaztag, contacteer ons!" />
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="container">
+  <header>
+    	<h1 class="hidden">Dit is de header</h1>
+			<figure id="logo">
+        		<img src="images/nabaztag.jpg" alt="Nabaztag logo" />
+            	<figcaption>Dit is het logo</figcaption>
+            </figure>
+        	<figure id="slogan">
+        		<img src="images/titel.jpg" alt="Nabaztag titel" />
+            	<figcaption>Dit is de titel</figcaption>
+            </figure>
+    </header>
+    <form name="form1" method="post" action="">
+      <span id="sprytextfield1">
+        <label for="email"></label>
+        <input type="text" name="email" id="email">
+        <span class="textfieldRequiredMsg">Een waarde is verplicht.</span></span>
+    </form>
+    <nav>
+    	<ul>
+        	<li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+      </ul>
+  </nav>
+	<section id="teaser">
+    	<h1>Wat is Nabaztag?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam placerat tortor non ipsum venenatis scelerisque. Donec sollicitudin lobortis sem, at varius quam fermentum at. Vivamus blandit rutrum diam sed hendrerit. Proin mollis dui vel nibh auctor aliquam in nec sapien. Nunc neque ante, fermentum non gravida at, aliquet vitae metus. </p>
+    </section>
+    <section id="content">
+   	  <form action="mailto:xavier@example.com?subject=mail via Nabaztag&description=Dit is een testmail&cc=x@example.com" method="post" enctype="text/plain">
+        	<table>
+            	<tr>
+                	<td><label>Voornaam:</label></td>
+                    <td><input type="text" name="voornaam" /></td>
+                </tr>
+                <tr>
+                	<td><label>Familienaam:</label></td>
+                    <td><input type="type" name="familienaam" /></td>
+                </tr>
+                <tr>
+                	<td><label>E-mail:</label></td>
+                    <td><span id="sprytextfield2">
+                    <label for="email2"></label>
+                    <input type="text" name="email2" id="email2">
+                    <span class="textfieldRequiredMsg">Een waarde is verplicht.</span><span class="textfieldInvalidFormatMsg">Gelieve een e-mailadres in te vullen.</span></span></td>
+                </tr>
+                <tr>
+                	<td><label>Geboortedatum:</label></td>
+                    <td><input type="text" name="geboortedatum" /></td>
+                </tr>
+                <tr>
+                	<td><label>Opmerkingen:</label></td>
+                    <td><textarea name="opmerkingen"></textarea></td>
+                </tr>
+                <tr>
+                	<td colspan="2"><input type="submit" value="Mail!" />
+                </tr>
+            </table>
+        </form>
+	</section>
+    <footer>
+    	<p>Meer weten over Nabaztag? Stuur een <a href="contact.html">bericht</a>, of <a href="rekenmachine.php">bereken uw prijs</a>.</p>
+    </footer>
+</div>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+</script>
+</body>
+</html>
